@@ -19,7 +19,7 @@ from .models import Base, File, Document
 from .embeddings import embeddings, get_embeddings
 
 # 검색 관련
-from .retrievers import DenseRetriever
+from .retrievers import DenseRetriever, SparseRetriever
 
 # 전체 export 목록
 __all__ = [
@@ -40,5 +40,5 @@ __all__ = [
     "embeddings", "get_embeddings",
 
     # 검색
-    "DenseRetriever",
+    "DenseRetriever", "SparseRetriever"
 ]
